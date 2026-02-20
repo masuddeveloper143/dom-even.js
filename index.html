@@ -23,6 +23,12 @@
     <button onclick="makeRed()">make red</button>
     <button onclick="makeGreen()">make green</button>
     <button onclick="makeBlue()">make blue</button>
+    <br><br>
+
+    <!-- -------------------------------------------------------------------------------- -->
+    <button id="btn-make-blue">make yellow</button>
+
+    <!-- ------------------------------------------------------------------------------------------- -->
     <script>
         function makeYellow() {
             document.body.style.backgroundColor = 'yellow';
@@ -37,6 +43,14 @@
         function makeBlue() {
             document.body.style.backgroundColor = 'blue';
         }
+
+        // -------------------------------------------------------------------------------
+        let btnMakeBlue = document.getElementById('btn-make-blue');
+
+        btnMakeBlue.onclick = function(){
+            document.body.style.backgroundColor = 'yellow';
+        }
+
     </script>
     <script src="dom-even.js"></script>
 </body>
