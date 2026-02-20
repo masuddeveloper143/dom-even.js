@@ -35,6 +35,7 @@
     <!-- option 4: addEventListener -->
 
     <button id="btn-make-green" onclick="makeGreen">make red</button>
+    <button id="btn-make-gold" onclick="makeGold">make gold</button>
 
     <!-- ------------------------------------------------------------------------------------------- -->
 
@@ -73,7 +74,17 @@
 
         document.getElementById('btn-make-green').addEventListener('click', 
             function makeGreen(){
-                consosole.log(5555)
+                // console.log(5555);
+                document.body.style.backgroundColor = 'green';
+            }
+        )
+
+        document.getElementById('btn-make-gold')
+        
+        .addEventListener('click', 
+            function makeGold(){
+                
+                document.body.style.backgroundColor = 'gold';
             }
         )
 
