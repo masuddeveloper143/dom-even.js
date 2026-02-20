@@ -29,6 +29,15 @@
     <button id="btn-make-blue">make red</button>
 
     <!-- ------------------------------------------------------------------------------------------- -->
+
+
+    <!-- -------------------------------------------------------------------------------- -->
+    <!-- option 4: addEventListener -->
+
+    <button id="btn-make-green" onclick="makeGreen">make red</button>
+
+    <!-- ------------------------------------------------------------------------------------------- -->
+
     <script>
         function makeYellow() {
             document.body.style.backgroundColor = 'yellow';
@@ -53,7 +62,23 @@
         }
         // --------------------------------------------------------------------------------------------
 
-        // option 4: addEventListener
+        // getElementByIdAddEventListener
+
+        // document.getElementById('btn-make-green').addEventListener('even type , handler')
+
+
+        // document.getElementById('btn-make-green').addEventListener('click', function makeGreen(){
+
+        // })
+
+        document.getElementById('btn-make-green').addEventListener('click', 
+            function makeGreen(){
+                consosole.log(5555)
+            }
+        )
+
+
+        // -------------------------------------------------------------------------------------
     </script>
     <script src="dom-even.js"></script>
 </body>
