@@ -1,13 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>dom even</title>
 </head>
+
 <body>
     <h1>DOM EVEN JS</h1>
 
+    <!-- option 1 even handler -->
+    <button onclick="console.log(7)">click me</button>
+    <button onclick="console.log(66)">another button</button>
+    <button onclick="console.log('i am clicked')">tihrd button</button>
+    <input type="text">
+    <br><br>
+
+
+    <!-- option 2 click even handler  -->
+    <button onclick="makeYellow()">make yellow</button>
+    <button onclick="makeRed()">make red</button>
+    <button onclick="makeGreen()">make green</button>
+    <button onclick="makeBlue()">make blue</button>
+    <script>
+        function makeYellow() {
+            document.body.style.backgroundColor = 'yellow';
+        }
+
+        function makeRed() {
+            document.body.style.backgroundColor = 'red';
+        }
+        function makeGreen() {
+            document.body.style.backgroundColor = 'green';
+        }
+        function makeBlue() {
+            document.body.style.backgroundColor = 'blue';
+        }
+    </script>
     <script src="dom-even.js"></script>
 </body>
+
 </html>
