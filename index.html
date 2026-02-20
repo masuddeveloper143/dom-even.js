@@ -26,7 +26,7 @@
     <br><br>
 
     <!-- -------------------------------------------------------------------------------- -->
-    <button id="btn-make-blue">make yellow</button>
+    <button id="btn-make-blue">make red</button>
 
     <!-- ------------------------------------------------------------------------------------------- -->
     <script>
@@ -44,15 +44,16 @@
             document.body.style.backgroundColor = 'blue';
         }
 
-        // -------------------------------------------------------------------------------
-
-        
         let btnMakeBlue = document.getElementById('btn-make-blue');
 
-        btnMakeBlue.onclick = function(){
-            document.body.style.backgroundColor = 'yellow';
-        }
+        // -------------------------------------------------------------------------------
 
+        btnMakeBlue.onclick = function () {
+            document.body.style.backgroundColor = 'red';
+        }
+        // --------------------------------------------------------------------------------------------
+
+        // option 4: addEventListener
     </script>
     <script src="dom-even.js"></script>
 </body>
