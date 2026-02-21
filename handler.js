@@ -7,3 +7,10 @@ document.getElementById('btn-update-title')
         pageTitleElement.innerText = 'updated page title text';
 
     })
+
+document.getElementById('btn-login')
+    .addEventListener('click', function btnLogin() {
+        let userInfoEl = document.getElementById('user-info')
+        userInfoEl.innerText = 'user logged in successfully'
+
+    })
