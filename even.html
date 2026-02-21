@@ -14,12 +14,16 @@
     <button id="btn-update-title"> update title</button>
 
     <br><br>
-    <p>no user</p>
+    <p id="user-info">no user</p>
     <button id="btn-login">login</button>
 
     <script>
         document.getElementById('btn-login')
-        .addEventListener(function btnLogin)
+            .addEventListener('click', function btnLogin() {
+                let userInfoEl = document.getElementById('user-info')
+                userInfoEl.innerText = 'user logged in successfully'
+
+            })
 
     </script>
 
