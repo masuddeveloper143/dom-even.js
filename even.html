@@ -24,7 +24,7 @@
     <br>
 
     <!-- handler input text  -->
-    <p>no name</p>
+    <p id="name">no name</p>
     <input id="input-name" placeholder="your name" type="text">
     <button id="btn-update">update</button>
 
@@ -36,8 +36,12 @@
             let nameInput = document.getElementById('input-name');
             console.log(nameInput)
 
-            name = nameInput.value;
+            let name = nameInput.value;
             console.log('name', name)
+
+            let nameP = document.getElementById('name');
+            nameP.innerText = name;
+
         })
 
     </script>
