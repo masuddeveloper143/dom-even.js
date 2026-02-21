@@ -17,8 +17,28 @@
     <p id="user-info">no user</p>
     <button id="btn-login">login</button>
 
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- handler input text  -->
+    <p>no name</p>
+    <input id="input-name" placeholder="your name" type="text">
+    <button id="btn-update">update</button>
+
     <script>
-       
+        document.getElementById('btn-update')
+        addEventListener('click', function btnUpdate() {
+            console.log('update click button')
+
+            let nameInput = document.getElementById('input-name');
+            console.log(nameInput)
+
+            name = nameInput.value;
+            console.log('name', name)
+        })
 
     </script>
 
