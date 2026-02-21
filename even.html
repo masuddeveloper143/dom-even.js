@@ -9,10 +9,21 @@
 
 <body>
 
-    <main>
-        <h1>evan handler</h1>
-        <button>update title</button>
-    </main>
+
+    <h1 id="title-tex">evan handler</h1>
+    <button id="btn-update-title" onclick="updateTitle">update title</button>
+
+
+    <script>
+        document.getElementById('btn-update-title')
+            .addEventListener('click', function updateTitle() {
+                // console.log('button click');
+                document.body.style.backgroundColor = 'red';
+
+            })
+
+    </script>
+
     <script src="handler.js"></script>
 </body>
 
