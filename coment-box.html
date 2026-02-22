@@ -21,7 +21,7 @@
     <h1>my awsome comment box. wrirte what in your mind!!!</h1>
     <section>
         <h1>All comment here</h1>
-        <div>
+        <div id="comment-box">
             <p class="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus vel praesentium amet
                 recusandae maxime! Maxime quae sequi iste nihil exercitationem est sapiente obcaecati adipisci
                 accusantium, quisquam fugit vero! Voluptate, dolorum!</p>
@@ -49,7 +49,21 @@
 
                 let commentTextArea = document.getElementById('comment-text-box');
                 let newComment = commentTextArea.value;
-                console.log(newComment);
+
+
+                // step 3 get the parent node whare to publish comment 
+                let commenContainer = document.getElementById('comment-box')
+                console.log(commenContainer)
+
+                // step 4 create a comment p and set the innertext 
+                let commentElement = document.createElement('p')
+                commentElement.classList.add('comment')
+                commentElement.innerText = newComment;
+
+                // step 5 append the new p tag to the perent node 
+                commenContainer.appendChild(commenContainer);
+
+
             })
     </script>
 </body>
