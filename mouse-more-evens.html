@@ -9,6 +9,8 @@
 
 <body>
     <button id="btn-mouse">micky mouse minnie</button>
+    <input id="user-name" placeholder="your Name" type="text">
+    <input id="user-email" placeholder="your email" type="text">
 
     <script>
         // document.getElementById('btn-mouse')
@@ -17,9 +19,62 @@
         //     })
 
 
-        document.getElementById('btn-mouse')
-            .addEventListener('mousemove', function () {
-                console.log('even triggered');
+        // document.getElementById('btn-mouse')
+        //     .addEventListener('mousemove', function () {
+        //         console.log('even triggered');
+        //     })
+
+        // document.getElementById('btn-mouse')
+        //     .addEventListener('mouseout', function () {
+        //         console.log('even triggered');
+        //     })
+        // --------------------------------------------------------------------------------------
+        // document.getElementById('user-name')
+        //     .addEventListener('focus', function () {
+        //         console.log('user about to write name')
+        //     })
+
+        // document.getElementById('user-email')
+        //     .addEventListener('focus', function () {
+        //         console.log('user about to write email')
+        //     })
+
+
+        // document.getElementById('user-name')
+        //     .addEventListener('blur', function () {
+        //         console.log('user done with name')
+        //     })
+
+        // document.getElementById('user-email')
+        //     .addEventListener('blur', function () {
+        //         console.log('user done with email')
+        //     })
+
+        // -----------------------------------------------------------------------------------------
+
+        // count how many word typing 
+        // document.getElementById('user-name')
+        //     .addEventListener('keydown', function () {
+        //         console.log('typing')
+        //     })
+        // show word name typing 
+        // document.getElementById('user-name')
+        //     .addEventListener('keydown', function (even) {
+        //         console.log('typing', even)
+        //     })
+
+
+        // count how many word typing and word name keydown 
+        // document.getElementById('user-name')
+        //     .addEventListener('keydown', function (even) {
+        //         console.log('typing', even.target.value);
+        //     })
+
+
+        // count how many word typing and word name keyup 
+        document.getElementById('user-name')
+            .addEventListener('keyup', function (even) {
+                console.log('typing', even.target.value);
             })
 
     </script>
