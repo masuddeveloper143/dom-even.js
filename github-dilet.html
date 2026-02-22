@@ -11,6 +11,20 @@
     <h1>my secret info</h1>
     <input id="input-delete" placeholder="write delete" type="text">
     <button id="btn-delete" disabled>Delete</button>
+
+    <script>
+
+        document.getElementById('input-delete')
+        addEventListener('keyup', function (even) {
+            let text = even.target.value;
+            // console.log('user typing')
+
+            if (text === 'delete'){
+                
+            }
+        })
+
+    </script>
 </body>
 
 </html>
