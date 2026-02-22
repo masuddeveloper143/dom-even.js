@@ -8,11 +8,19 @@
 </head>
 
 <body>
-    <button class="btn-mouse">micky mouse minnie</button>
+    <button id="btn-mouse">micky mouse minnie</button>
 
     <script>
+        // document.getElementById('btn-mouse')
+        //     .addEventListener('mouseenter', function () {
+        //         console.log('even triggered');
+        //     })
+
+
         document.getElementById('btn-mouse')
-        .addEventListener('mouseenter')
+            .addEventListener('mousemove', function () {
+                console.log('even triggered');
+            })
 
     </script>
 </body>
