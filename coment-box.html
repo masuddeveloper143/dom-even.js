@@ -35,7 +35,7 @@
 
         <textarea name="" id="comment-text-box" cols="60" rows="5"></textarea>
         <br>
-        <button id="btn-comment-post">post</button>
+        <button id="btn-comment-post">comment post</button>
     </section>
 
 
@@ -52,8 +52,8 @@
 
 
                 // step 3 get the parent node whare to publish comment 
-                let commenContainer = document.getElementById('comment-box')
-                console.log(commenContainer)
+                let commentContainer = document.getElementById('comment-box')
+                console.log(commentContainer)
 
                 // step 4 create a comment p and set the innertext 
                 let commentElement = document.createElement('p')
@@ -61,7 +61,11 @@
                 commentElement.innerText = newComment;
 
                 // step 5 append the new p tag to the perent node 
-                commenContainer.appendChild(commenContainer);
+                commentContainer.appendChild(commentElement);
+
+                // step 6 clean the text area 
+
+                commentTextArea.value = ' ';
 
 
             })
