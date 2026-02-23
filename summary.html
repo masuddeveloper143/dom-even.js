@@ -8,6 +8,10 @@
 </head>
 
 <body>
+
+    <div class="name-container">
+
+    </div>
     <h1>DIM Event summsry</h1>
     <input id="name-input" placeholder="your name" type="text">
     <button onclick="addName()">Add Name</button>
@@ -23,6 +27,16 @@
             let nameInput = document.getElementById('name-input')
             // console.log(nameInput);
             let newName = nameInput.value;
+            // console.log(newName);
+
+            // parent 
+            let nameContainer = document.getElementById('name-container')
+
+            // create p 
+
+            let p = document.createElement('p');
+            p.innerText = newName;
+
         }
 
 
