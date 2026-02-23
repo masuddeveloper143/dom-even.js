@@ -17,16 +17,19 @@
         <li class="item">my Awsome item-5</li>
         <li class="item">my Awsome item-6</li>
     </ol>
-
+    <button>add new item</button>
     <script>
         let items = document.getElementsByClassName('item')
         // console.log(items);
         for (let item of items) {
             // console.log(item);
-            item.addEventListener('click', function () {
-                console.log(event.target.);
+            item.addEventListener('click', function (event) {
+                // console.log(event.target.parentNode);
+                event.target.parentNode.removeChild(event.target);
             })
         }
+
+
     </script>
 </body>
 
