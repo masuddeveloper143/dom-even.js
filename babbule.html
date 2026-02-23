@@ -30,27 +30,34 @@
 
 <body>
     <h1>explore even bubble</h1>
-    <section>
+    <section id="list-container">
 
+
+        <h3>list of things</h3>
+        <ol id="item-list">
+            <li id="item-1">Lorem, ipsum.</li>
+            <li id="item-2">Magni, dolor!</li>
+            <li id="item-3">Quasi, esse?</li>
+            <li id="item-4">Qui, exercitationem.</li>
+            <li id="item-5">Minus, iusto?</li>
+            <li id="item-6">Ipsum, consequatur?</li>
+        </ol>
     </section>
-    <h3>list of things</h3>
-    <ol id="item-list">
-        <li id="item-1">Lorem, ipsum.</li>
-        <li id="item-2">Magni, dolor!</li>
-        <li id="item-3">Quasi, esse?</li>
-        <li id="item-4">Qui, exercitationem.</li>
-        <li id="item-5">Minus, iusto?</li>
-        <li id="item-6">Ipsum, consequatur?</li>
-    </ol>
-
     <script>
         document.getElementById('item-2')
-            .addEventListener('click', function (){
+            .addEventListener('click', function () {
                 console.log('item 2 cliked');
 
                 // ol cliker handler 
+                document.getElementById('item-list')
+                    .addEventListener('click', function () {
+                        console.log(' ol cliked');
+                    })
 
-                
+                document.getElementById('list-container')
+                    .addEventListener('click', function () {
+                        console.log('cliked section');
+                    })
             })
     </script>
 </body>
