@@ -17,7 +17,7 @@
         <li class="item">my Awsome item-5</li>
         <li class="item">my Awsome item-6</li>
     </ol>
-    <button>add new item</button>
+    <button id="add-new-item">add new item</button>
     <script>
         let items = document.getElementsByClassName('item')
         // console.log(items);
@@ -29,7 +29,12 @@
             })
         }
 
-        
+        document.getElementById('add-new-item')
+        addEventListener('click', function () {
+            console.log('btn cliked');
+        })
+
+
 
 
     </script>
