@@ -6,7 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        
+        body {
+            border: 2px solid red;
+            margin: 2px;
+        }
+
+        section {
+            border: 2px solid green;
+            margin: 2px;
+        }
+
+        ol {
+            border: 2px solid purple;
+            margin: 2px;
+        }
+
+        li {
+            border: 2px solid blue;
+            margin: 2px;
+        }
     </style>
 </head>
 
@@ -16,14 +34,21 @@
 
     </section>
     <h3>list of things</h3>
-    <ul>
+    <ol id="item-list">
         <li id="item-1">Lorem, ipsum.</li>
         <li id="item-2">Magni, dolor!</li>
         <li id="item-3">Quasi, esse?</li>
         <li id="item-4">Qui, exercitationem.</li>
         <li id="item-5">Minus, iusto?</li>
         <li id="item-6">Ipsum, consequatur?</li>
-    </ul>
+    </ol>
+
+    <script>
+        document.getElementById('item-2')
+            .addEventListener('click', function (){
+                console.log('item 2 cliked');
+            })
+    </script>
 </body>
 
 </html>
