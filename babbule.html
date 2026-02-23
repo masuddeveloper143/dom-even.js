@@ -28,8 +28,8 @@
     </style>
 </head>
 
-<body>
-    <h1>explore even bubble</h1>
+<body id="body">
+    <h1>explore event bubble</h1>
     <section id="list-container">
 
 
@@ -45,20 +45,37 @@
     </section>
     <script>
         document.getElementById('item-2')
-            .addEventListener('click', function () {
+            .addEventListener('click', function (event) {
                 console.log('item 2 cliked');
-
-                // ol cliker handler 
-                document.getElementById('item-list')
-                    .addEventListener('click', function () {
-                        console.log(' ol cliked');
-                    })
-
-                document.getElementById('list-container')
-                    .addEventListener('click', function () {
-                        console.log('cliked section');
-                    })
+                // event.stopPropagation()
+                event.stopImmediatePropagation();
             })
+        document.getElementById('item-2')
+            .addEventListener('click', function (event) {
+                console.log('item 3 cliked');
+                
+            })
+        document.getElementById('item-2')
+            .addEventListener('click', function (event) {
+                console.log('item 4 cliked');
+                
+            })
+        // ol cliker handler 
+        document.getElementById('item-list')
+            .addEventListener('click', function (event) {
+                console.log(' ol cliked');
+            })
+
+        document.getElementById('list-container')
+            .addEventListener('click', function (event) {
+                console.log(' section cliked ');
+            })
+
+        document.getElementById('body')
+            .addEventListener('click', function (event) {
+                console.log('body cliked ');
+            })
+
     </script>
 </body>
 
