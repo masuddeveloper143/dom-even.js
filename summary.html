@@ -9,12 +9,15 @@
 
 <body>
 
-    <div class="name-container">
 
-    </div>
     <h1>DIM Event summsry</h1>
     <input id="name-input" placeholder="your name" type="text">
     <button onclick="addName()">Add Name</button>
+    <button id="btn-add-name">name add 2</button>
+
+    <div id="name-container">
+
+    </div>
 
     <script>
         // function addName() {
@@ -37,8 +40,19 @@
             let p = document.createElement('p');
             p.innerText = newName;
 
+            // append
+            nameContainer.appendChild(p);
+
+            nameInput.value = '';
+
         }
 
+
+        // add evets listener 
+        document.getElementById('btn-add-name')
+            .addEventListener('click', function () {
+
+            })
 
     </script>
 </body>
