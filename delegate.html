@@ -19,20 +19,41 @@
     </ol>
     <button id="add-new-item">add new item</button>
     <script>
-        let items = document.getElementsByClassName('item')
-        // console.log(items);
-        for (let item of items) {
-            // console.log(item);
-            item.addEventListener('click', function (event) {
-                // console.log(event.target.parentNode);
-                event.target.parentNode.removeChild(event.target);
-            })
-        }
+        // let items = document.getElementsByClassName('item')
+        // // console.log(items);
+        // for (let item of items) {
+        //     // console.log(item);
+        //     item.addEventListener('click', function (event) {
+        //         // console.log(event.target.parentNode);
+        //         event.target.parentNode.removeChild(event.target);
+        //     })
+        // }
 
+        // ----------------------------------------------------------------------------------------------
+
+        document.getElementById('item-list')
+
+            .addEventListener('click', function (event) {
+                // console.log(event.target);
+                event.target.parentNode.removeChild(event.target)
+            })
+
+
+        // ----------------------------------------------------------------------------------
         document.getElementById('add-new-item')
-        addEventListener('click', function () {
-            console.log('btn cliked');
-        })
+            .addEventListener('click', function () {
+                // console.log('btn cliked');
+                // prent to be added to 
+                let ol = document.getElementById('item-list');
+
+
+                // new item 
+                let li = document.createElement('li')
+                li.innerText = 'brand new itaem added';
+
+                // add the item 
+                ol.appendChild(li);
+            })
 
 
 
